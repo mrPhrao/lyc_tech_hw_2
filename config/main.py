@@ -27,7 +27,7 @@ tk.Label(
     text="Weather Information App",
     font=("Arial", 18, "bold"),
     bg=primary_blue,
-    fg=white_text
+    fg=white
 ).pack(expand=True, anchor='center')
 
 city_frame = tk.LabelFrame(root,
@@ -60,7 +60,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=0, column=0, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=0, column=0, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Min/Max Temp',
@@ -69,7 +69,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=1, column=0, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=1, column=0, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Humidity',
@@ -78,7 +78,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=2, column=0, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=2, column=0, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Pressure',
@@ -87,7 +87,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=3, column=0, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=3, column=0, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Wind Data',
@@ -96,7 +96,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=0, column=1, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=0, column=1, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Clouds Data',
@@ -105,7 +105,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=1, column=1, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=1, column=1, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Visibility',
@@ -114,7 +114,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=2, column=1, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=2, column=1, sticky='w', padx=10, pady=2)
 
 tk.Checkbutton(inner_select,
                text='Timezone',
@@ -123,7 +123,7 @@ tk.Checkbutton(inner_select,
                anchor='w',
                cursor='hand2',
                padx=5, pady=3,
-               selectcolor=checkbox_white).grid(row=3, column=1, sticky='w', padx=10, pady=2)
+               selectcolor=white).grid(row=3, column=1, sticky='w', padx=10, pady=2)
 
 
 button_frame = tk.Frame(root)
@@ -134,7 +134,7 @@ confirm = tk.Button(
     text='Get Weather',
     command=lambda: main_confirm(city, var1, var2, var3, var4, var5, var6, var7, var8),
     bg=success_green,
-    fg=white_text,
+    fg=white,
     font=mini_font,
     width=15,
     height=2,
@@ -147,7 +147,7 @@ instruction = tk.Button(
     text='Instructions',
     command=show_instruction,
     bg=primary_blue,
-    fg=white_text,
+    fg=white,
     font=mini_font,
     width=15,
     height=2,

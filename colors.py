@@ -11,9 +11,5 @@ status_bar_bg = '#333333'
 
 dark_text = '#000000'
 medium_gray_text = '#666666'
-white_text = '#ffffff'
 
 border_gray = '#e0e0e0'
-radio_button_white = '#ffffff'
-checkbox_white = '#ffffff'
-row_stripe = '#f5f5f5'

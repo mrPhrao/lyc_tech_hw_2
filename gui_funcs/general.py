@@ -67,7 +67,7 @@ def show_wanted_data(city, var1, var2, var3, var4, var5, var6, var7, var8, lat, 
         text=f"{data['city']}, {data['country']}",
         font=("Arial", 16, "bold"),
         bg=primary_blue,
-        fg=white_text
+        fg=white
     ).pack(expand=True)
 
     main_info = tk.Frame(result_window, bg=very_light_blue, height=80)

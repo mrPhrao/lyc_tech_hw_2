@@ -53,7 +53,7 @@ def show_city_selection(city_name, callback):
         text="Select Location",
         font=("Arial", 20, "bold"),
         bg=primary_blue,
-        fg=white_text
+        fg=white
     ).pack(expand=True)
 
     tk.Label(
@@ -61,10 +61,10 @@ def show_city_selection(city_name, callback):
         text=f"for: {city_name.title()}",
         font=("Arial", 12),
         bg=primary_blue,
-        fg=white_text
+        fg=white
     ).pack(expand=True)
 
-    radio_frame = tk.Frame(selection_window, bg=white, relief='groove', bd=2)
+    radio_frame = tk.Frame(selection_window, bg=white, bd=2)
     radio_frame.pack(fill='both', expand=True, padx=20, pady=15)
 
     locations = get_all_locations(city_name)
@@ -116,7 +116,7 @@ def show_city_selection(city_name, callback):
         command=on_confirm,
         font=("Arial", 12, "bold"),
         bg=success_green,
-        fg=white_text,
+        fg=white,
         width=12,
         cursor='hand2'
     )
@@ -128,7 +128,7 @@ def show_city_selection(city_name, callback):
         command=on_cancel,
         font=("Arial", 12, "bold"),
         bg=error_red,
-        fg=white_text,
+        fg=white,
         width=12,
         cursor='hand2'
     )
