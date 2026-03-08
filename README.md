@@ -11,3 +11,9 @@ I couldn't create such function and therefore file main.py. So, main_win.py is a
 In order to run my app you have to run this file. Yep, it's that simple.
 
 Btw colors.py may seem unnecessary, but i was studied to not to hardcode data where possible and separate it to some sort of bd. And since there is no sence to use sql stuff, i decided to put colors in python file.
+
+
+And what does my app actually do? It parses weather data from https://openweathermap.org/
+All instructions are built-in my app itself, and it must not be hard to realize how it works.
+
+Have a nice expirience! I had two days and two nights of hard work and learning.
