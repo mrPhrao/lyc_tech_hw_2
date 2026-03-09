@@ -25,7 +25,7 @@ header_frame.pack_propagate(False)
 tk.Label(
     header_frame,
     text="Weather Information App",
-    font=("Arial", 18, "bold"),
+    font=mini_font,
     bg=primary_blue,
     fg=white
 ).pack(expand=True, anchor='center')
@@ -48,10 +48,10 @@ select_frame = tk.LabelFrame(root, text="Weather Parameters", font=mini_font, pa
 select_frame.pack(fill='both', expand=True, padx=20, pady=10)
 
 inner_select = tk.Frame(select_frame)
-inner_select.pack(fill='both', expand=True, padx=10, pady=10)
+inner_select.pack(fill='both', padx=10, pady=10)
 
-inner_select.columnconfigure(0, weight=1, uniform='col')
-inner_select.columnconfigure(1, uniform='col')
+inner_select.columnconfigure(0, weight=1)
+inner_select.columnconfigure(1)
 
 tk.Checkbutton(inner_select,
                text='Temperature',
@@ -125,11 +125,10 @@ tk.Checkbutton(inner_select,
                padx=5, pady=3,
                selectcolor=white).grid(row=3, column=1, sticky='w', padx=10, pady=2)
 
-
 button_frame = tk.Frame(root)
 button_frame.pack(fill='x', padx=20, pady=15)
 
-confirm = tk.Button(
+tk.Button(
     button_frame,
     text='Get Weather',
     command=lambda: main_confirm(city, var1, var2, var3, var4, var5, var6, var7, var8),
@@ -139,10 +138,9 @@ confirm = tk.Button(
     width=15,
     height=2,
     cursor='hand2'
-)
-confirm.pack(side='left', padx=5, expand=True, fill='x')
+).pack(side='left', padx=5, expand=True, fill='x')
 
-instruction = tk.Button(
+tk.Button(
     button_frame,
     text='Instructions',
     command=show_instruction,
@@ -152,7 +150,6 @@ instruction = tk.Button(
     width=15,
     height=2,
     cursor='hand2'
-)
-instruction.pack(side='left', padx=5, expand=True, fill='x')
+).pack(side='left', padx=5, expand=True, fill='x')
 
 root.mainloop()

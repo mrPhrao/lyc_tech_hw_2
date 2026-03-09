@@ -36,10 +36,10 @@ def main_confirm(city, var1, var2, var3, var4, var5, var6, var7, var8):
 
     if error == 'existence_error':
         message = f"Such city : {city_name} doesn't exist"
-        messagebox.showinfo(title='Error', message=message)
+        messagebox.showerror(title='Error', message=message)
     if error == 'input_error':
         message = f"Invalid name.\nCity name can only contain english letters"
-        messagebox.showinfo(title='Error', message=message)
+        messagebox.showerror(title='Error', message=message)
     if error == 'empty_error':
         message = f"City must not be empty"
-        messagebox.showinfo(title='Error', message=message)
+        messagebox.showerror(title='Error', message=message)

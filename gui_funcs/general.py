@@ -46,17 +46,14 @@ def validate_city(entry):
 
 
 def show_wanted_data(city, var1, var2, var3, var4, var5, var6, var7, var8, lat, lon):
-    if city == '' and lat and lon:
-        data = get_all_cords_info(float(lat), float(lon))
-    else:
-        data = get_all_city_info(city)
+    data = get_all_cords_info(float(lat), float(lon)) if city == '' and lat and lon else get_all_city_info(city)
 
     result_window = tk.Toplevel()
     result_window.title(f"Weather in {data['city']}, {data['country']}")
-    result_window.geometry("450x500")
+    result_window.geometry('450x600')
     result_window.transient()
     result_window.grab_set()
-    result_window.resizable(False, False)
+    result_window.resizable(False, True)
 
     header = tk.Frame(result_window, bg=primary_blue, height=50)
     header.pack(fill='x')
@@ -65,7 +62,7 @@ def show_wanted_data(city, var1, var2, var3, var4, var5, var6, var7, var8, lat, 
     tk.Label(
         header,
         text=f"{data['city']}, {data['country']}",
-        font=("Arial", 16, "bold"),
+        font=('Arial', 16, 'bold'),
         bg=primary_blue,
         fg=white
     ).pack(expand=True)
@@ -77,7 +74,7 @@ def show_wanted_data(city, var1, var2, var3, var4, var5, var6, var7, var8, lat, 
     tk.Label(
         main_info,
         text=f"General Data : {data['general']} - {data['description']}",
-        font=("Arial", 14),
+        font=('arial', 14),
         bg=very_light_blue
     ).pack(expand=True)
 
@@ -96,8 +93,8 @@ def show_wanted_data(city, var1, var2, var3, var4, var5, var6, var7, var8, lat, 
 
             tk.Label(
                 row_frame,
-                text=f"{display_name}:",
-                font=('Arial', 11, 'bold'),
+                text=f'{display_name}:',
+                font=('arial', 11, 'bold'),
                 bg=row_frame['bg'],
                 width=15,
                 anchor='w'
