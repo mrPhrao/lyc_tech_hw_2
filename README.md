@@ -1,6 +1,6 @@
 I accidentally force pushed my app, so it overwrote my previous README. This version might not be as poetic as previous was.
 
-Hello Mark Ivanovich!
+Hello Dear User!
 
 This is my homework for the technology lesson. It's a fairly large app, so I decided to push it here to keep it safely.
 It's not my first app, but it is my first Tkinter app, so the performance and filenames might not be as they're supposed to be.
