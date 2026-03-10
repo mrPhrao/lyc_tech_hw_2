@@ -10,8 +10,7 @@ I couldn't create such a function (and therefore file), so main_win.py serves as
 
 To run my app, simply run this file. Yep, it's that simple.
 
-By the way, colors.py might seem unnecessary, but I was taught not to hardcode data where possible and to separate it into some kind of "database".
-Since using SQL didn't make sense here, I decided to store colors in .py file
+By the way, colors.py might seem unnecessary, but I was taught not to hardcode data where possible and to separate it into file.
 
 It fetches weather data from https://openweathermap.org/ using the requests lib.
 All instructions are built into the app itself - it shouldn't be hard to figure out how it works.
